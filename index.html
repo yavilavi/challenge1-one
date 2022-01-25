@@ -3,20 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Challenge 1 programa ONE</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1>Text encoder and decoder</h1>
-<h2>Write your coded or decoded text</h2>
-<textarea cols="100" rows="10" wrap="hard" placeholder="Write or paste your code here"></textarea><br>
-<button>Encrypt</button>
-<button>Decrypt</button>
-<h2>Result</h2>
-<textarea disabled cols="100" rows="10" wrap="hard"></textarea>
+<header>
+    <h1 class="main-header">Text encoder and decoder</h1>
+</header>
+<div class="main-container">
+    <div class="source group">
+        <h2 class="title">Write your coded or decoded text</h2>
+        <label>
+            <textarea id="source" cols="50" rows="10" wrap="hard"
+                      placeholder="Write or paste your code here"></textarea>
+        </label>
+        <div class="btn-container">
+            <button id="encrypt">Encrypt</button>
+            <button id="decrypt">Decrypt</button>
+        </div>
+
+    </div>
+    <div class="target group">
+        <h2 class="title">Result</h2>
+        <label>
+            <textarea id="target" disabled cols="50" rows="10" wrap="hard"></textarea>
+        </label>
+        <div class="btn-container">
+            <button id="copyResult">Copy</button>
+        </div>
+    </div>
+</div>
 
 <footer>
-    <div>Make with love by <a href="https://github.com/yavilavi">Yavilavi</a></div>
+    <div>Made with love by <a href="https://github.com/yavilavi">Yavilavi</a></div>
 </footer>
-<script src="app.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
